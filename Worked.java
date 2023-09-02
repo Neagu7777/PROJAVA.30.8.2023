@@ -66,9 +66,10 @@ public class Worked extends Person implements AbleToCalculatePension{
 
     @Override
     public double calculatePension() {
-        double averageSalary = CalculatorUtils.calculateAverage(maxSalary, minSalary);
-        double pension = 0.25 * averageSalary;
-        return pension;
+//        double averageSalary = CalculatorUtils.calculateAverage(maxSalary, minSalary);
+//        double pension = 0.25 * averageSalary;
+//        return pension;
+        return CalculatorUtils.calculateAverage((int) minSalary, (int) maxSalary) * 0.25;
 
     }
 }

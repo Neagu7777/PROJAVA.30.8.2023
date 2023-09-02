@@ -37,6 +37,7 @@ public class Main {
         pensioner.die(10);
 
        worked.calculatePension();
+        System.out.println(worked.calculatePension());
 
 
     }
